@@ -12,9 +12,4 @@ func load() (probeObjects, error) {
 
 }
 
-// func must(e error) error {
-// 	if e != nil {
-// 		return e
-// 	}
-// 	return nil
-// }
+

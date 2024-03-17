@@ -8,6 +8,7 @@ import (
 	"github.com/vishvananda/netlink"
 )
 
+/*
 func main() {
 	var ifaceStr string
 	flag.StringVar(&ifaceStr, "iface", "eth0", "interface to attach the probe to")
@@ -55,4 +56,9 @@ func newClsQdisc() {
 		fmt.Printf("Error adding clsact Qdisc: %v\n", err)
 		return
 	}
+}
+/*/
+
+func main(){
+	
 }

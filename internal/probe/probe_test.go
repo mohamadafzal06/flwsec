@@ -20,7 +20,8 @@ func TestPakcet(t *testing.T) {
 	// retCode should be 0, because in prog.c we return 0.
 	retCode, out, err := objs.probePrograms.Probe.Test(in)
 	require.NoError(t, err)
-	require.Equal(t, 0, retCode)
+	require.Equal(t, uint32(0), retCode)
 	require.Equal(t, in, out)
+	t.Log(objs.probePrograms.Probe.VerifierLog)
 
 }
