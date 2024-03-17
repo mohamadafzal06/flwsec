@@ -2,5 +2,6 @@ build:
 	go build cmd/tcplat.go
 
 test-probe:
-	go test -v ./internal/probe/
+	go generate ./...
+	go test -v -count=1 ./internal/probe/
 
